@@ -21,9 +21,15 @@ Meu primeiro projetinho do flask da deciplina de web 2, é um cadastro de jogos 
 ## Como os usuários podem utilizá-lo
 
 Ao preencher o cadastro a resposta sera aramazenada na lista
-## 📁 Acesso ao projeto
 
-**Indique como é possível baixar ou acessar o código fonte do projeto, seja projeto inicial ou final**
+## ✔️ Técnicas e tecnologias utilizadas
+
+- ``HTML``
+- ``PYTHON``
+- ``CSS``
+
+## 📁 Acesso ao projeto
+Você pode acessar os arquivos do projeto clicando [aqui]().
 
 ## 🛠️ Abrir e rodar o projeto
 
