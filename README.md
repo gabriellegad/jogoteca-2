@@ -18,7 +18,7 @@ Meu primeiro projetinho do flask da deciplina de web 2, é um cadastro de jogos 
 - `cadastro`: cadastra os jogos em uma lista 
 - `categorias`: lista os jogos em nome, categoria e console   
 
-## Como os usuários podem utilizá-lo
+## 📁 Como os usuários podem utilizá-lo
 
 Ao preencher o cadastro a resposta sera aramazenada na lista
 
@@ -33,13 +33,16 @@ Você pode acessar os arquivos do projeto clicando [aqui]().
 
 ## 🛠️ Abrir e rodar o projeto
 
-**Apresente as instruções necessárias para abrir e executar o projeto**
+- ``Abra o Visual Studio.``
+- ``Na janela inicial, selecione Clonar um repositório.``
+- ``Insira ou digite o local do repositório e selecione o botão Clonar .``
+- ``Você pode ser solicitado a obter informações de entrada do usuário na caixa de diálogo Informações do Usuário do Git .``
 
-<h3>#Onde os usuários podem encontrar ajuda sobre seu projeto</h3>
+## 📁 Onde os usuários podem encontrar ajuda sobre seu projeto
 
-entrando em contato por meio das redes sociais ou diretamente no email, ate ser criado um forum de ajuda
+entrando em contato por meio das redes sociais [Instagram](instagram.com/gabriellegad_45/), ate ser criado um forum de ajuda
 
-<h3>#Autor do projeto</h3>
+## :hammer: Autor do projeto
 
 Gabrielle Gad de Lima 
   
