@@ -1,28 +1,35 @@
+body {
+  background-image: url("evil.png");
+  height: 11px;
+  
+}
+
 .cabecalho{
-  background-image: url("games.png");
+  background-image: url("evil.png");
   height: 150px;
+
 }
 
 .container {
   font-weight: 600; 
 }
+.container_a {
+  text-align: center;
+  font-weight: bold;
+}
 .display-2{
-  color: #46295A; 
+  color: black; 
   font-weight: 400;
-   text-shadow:
-    1px -1px 0 #2f5d87, 
-      2px -2px 0 #2e5a83, 
-      3px -3px 0 #2d5880, 
-      4px -4px 0 #2b557c, 
-      5px -5px 0 #2a5378, 
-      6px -6px 0 #295074, 
-      7px -7px 0 #274d71, 
-      8px -8px 0 #264b6d, 
-      9px -9px 0 #254869, 
-      10px -10px 0 #234665, 
-      11px -11px 0 #224361, 
-      12px -12px 0 #21405e, 
-      13px -13px 12px rgba(0, 0, 0, 0.55), 
+  font-family:  "Gill Sans Extrabold", Helvetica, sans-serif;
+  text-shadow:
+    1px -1px 0 #696969,
+      2px -2px 0 #696969,
+      3px -3px 0 #696969,
+      4px -4px 0 #696969,
+      5px -5px 0 #696969,
+      6px -6px 0 #696969,
+      7px -7px 0 #696969,
+      13px -13px 12px rgba(0, 0, 0, 0.55),
       13px -13px 1px rgba(0, 0, 0, 0.5);
 }
 
@@ -35,6 +42,9 @@ body {
   min-height: 100vh;
   display: flex;
   flex-flow: column;
+  
+  color: black;
+  font-weight: bold;
 }
 
 footer { 
@@ -42,19 +52,18 @@ footer {
 }
 
 .thead-default {
-  color: purple;
-  text-align: center;  
+  color: black;
+  text-align: center; 
+  background: #E8ECEC;
 }
 
 .b {
   text-align: center;
-  font-weight: 700; 
+  font-weight: 800; 
 }
 
 .u {
   font-weight: 700;
 }
-
-
 
 

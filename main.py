@@ -1,7 +1,6 @@
 from flask import Flask, render_template, request
 
-
-class Jogo:
+class Jogo :
     def __init__(self, nome, categoria, console):
         self.nome = nome
         self.categoria = categoria
@@ -26,7 +25,7 @@ jogo9 = Jogo('Far Cry: Primal', 'Aventura, Exploração, Mundo aberto',
 lista = [jogo1, jogo2, jogo3, jogo4, jogo5, jogo6, jogo7, jogo8, jogo9]
 
 app = Flask(__name__)
-
+app.secret_key = 'gad'
 
 @app.route('/')
 def ola():
@@ -37,6 +36,9 @@ def ola():
 def novo():
     return render_template('novo.html', titulo='Meus Jogos')
 
+@app.route('/sobre')
+def sobre():
+    return render_template('novo.html', titulo='Meus Jogos')
 
 @app.route('/criar', methods=[
     "post",
@@ -49,7 +51,27 @@ def criar():
     lista.append(jogo)
     return render_template('lista.html', titulo="Jogos", jogos=lista)
 
+@app.route('/login', methods=['GET', 'POST'])
+def login():
+  if request.method == 'POST':
+    email = request.form['email']
+    senha = request.form['senha']
+    usuario = usuarios.buscar(email, senha)
+    if usuario is None:
+      flash('Usuário/Senha inválidos.')
+    else:
+      session['usuario_email'] = usuario.email
+      session['usuario_email'] = usuario.nome
+      return redirect(url_for('index'))
+  return render_template('login.html')
 
+@app.route('/logout', methods=['POST'])
+def logout():
+  session.pop('usuario_email', None)
+  session.pop('usuario_nome', None)
+  return redirect(url_for('index'))
+
+  
 # Esse código é para quando for rodar no Replit
 app.run(host='0.0.0.0', debug=True)
 
